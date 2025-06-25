@@ -118,7 +118,9 @@ Android Studio will automatically download and install all dependencies using Gr
 
 - **Running the app:**
     - Open the WeatherApp folder in Android Studio.
-    - Usa an android device or select an emulator.
+    - Input your OpenWeatherMap ApiKey into the getCoordinatesByCity functions apiKey variable in HttpRequests.kt file,
+    which can be found in "WeatherApp\app\src\main\java\com\example\weatherapp\"
+    - Use an android device or select an emulator.
     - Click **Run** and the project should build and run.
 
 ---
@@ -149,8 +151,6 @@ In case you wish to try the app without building it yourself in Android Studio, 
 ## 🐞 Known Issues
 
 -  City search: When searching for weather based on city name, due to the nature of how OpenWeatherMap's Geocoding API works, even if the input is not a clear city name (e. g. "A") the request will go through and an estimation of a city which might be in question is made. However this has been taken into account when updating the UI so the app will still show which city is in question.
-
-- Api key: The api key is explicitly written in code instead of being in a .env file, however this has a minimal effect on security since the api key needs to be written out in the README in the repository if it's placed in a .env.
 
 ---
 

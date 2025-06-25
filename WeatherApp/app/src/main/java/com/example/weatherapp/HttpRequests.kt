@@ -78,7 +78,7 @@ suspend fun getWeekWeather(latitude: Double, longitude: Double): WeekForecast? {
  */
 suspend fun getCoordinatesByCity(
         city: String,
-        apiKey: String = "f1eff760ddf6681f9683c4aaa508d3a9"
+        apiKey: String = "Insert your APIKEY here"
     ): List<GeoCodeResponse>? {
     try {
         val geoCodeResult = RetroFitClient.geocodeService.getCoordinates(city, limit = 1, apiKey)
